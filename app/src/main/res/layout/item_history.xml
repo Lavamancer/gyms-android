@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/historyitem_relativelayout"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/historyitem_linearlayout"
+            android:layout_toLeftOf="@id/historyitem_right_framelayout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/historyitem_radiobutton"
+                android:clickable="false"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="5dp"
+                android:buttonTint="@color/gray_dark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <CheckBox
+                android:id="@+id/historyitem_left_checkbox"
+                android:visibility="gone"
+                android:clickable="false"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp" />
+
+            <TextView
+                android:id="@+id/historyitem_date_textview"
+                style="@style/CustomTextViewStyleForm"
+                android:text="13/02/2018"
+                android:textSize="14sp"
+                android:textColor="@color/gray_dark"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/historyitem_name_textview"
+                style="@style/CustomTextViewStyleForm"
+                android:text="Author's name Author's name Author's name"
+                android:lines="1"
+                android:ellipsize="end"
+                android:textSize="14sp"
+                android:textColor="@color/gray_dark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/historyitem_right_framelayout"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/historyitem_checkbox"
+                android:visibility="visible"
+                android:clickable="false"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp" />
+
+            <TextView
+                android:visibility="visible"
+                android:id="@+id/historyitem_detail_textview"
+                style="@style/CustomTextViewStyleForm"
+                android:gravity="center_vertical"
+                android:text="135.50 €"
+                android:lines="1"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/gray_dark"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

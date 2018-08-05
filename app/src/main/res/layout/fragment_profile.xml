@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="260dp">
+
+            <ImageView
+                android:id="@+id/profile_imageview"
+                android:src="@drawable/login_bg"
+                android:scaleType="centerCrop"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/menu_footer_bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/profile_name_textview"
+                    style="@style/CustomTextViewStyle"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:text="Juan Albarracín Quiñonero"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    style="@style/CustomTextViewStyle"
+                    android:textSize="16sp"
+                    android:textColor="@color/white_62"
+                    android:text="Subscriber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/profile_select_imageview"
+                android:src="@drawable/menu_header_profile"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="30dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                style="@style/CustomTextViewStyle"
+                android:text="Personal information"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="1dp"
+                android:textColor="@color/red_light"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <FrameLayout
+                android:background="@color/red_light"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        style="@style/CustomTextViewStyleForm"
+                        android:text="Name"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/profile_name_edittext"
+                        style="@style/CustomEditTextStyleForm"
+                        android:hint="Enter your name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        style="@style/CustomTextViewStyleForm"
+                        android:text="Lastname"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/profile_lastname_edittext"
+                        style="@style/CustomEditTextStyleForm"
+                        android:hint="Enter your lastname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        style="@style/CustomTextViewStyleForm"
+                        android:text="Nickname"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/profile_nickname_edittext"
+                        style="@style/CustomEditTextStyleForm"
+                        android:hint="Enter your nickname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        style="@style/CustomTextViewStyleForm"
+                        android:text="Personal ID"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/profile_personalid_edittext"
+                        style="@style/CustomEditTextStyleForm"
+                        android:hint="Enter your personal ID"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        style="@style/CustomTextViewStyleForm"
+                        android:text="Birthdate"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/profile_birthdate_edittext"
+                        style="@style/CustomEditTextStyleForm"
+                        android:hint="Enter your birthdate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        style="@style/CustomTextViewStyleForm"
+                        android:text="Phone"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/profile_phone_edittext"
+                        style="@style/CustomEditTextStyleForm"
+                        android:hint="Enter your phone number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        style="@style/CustomTextViewStyleForm"
+                        android:text="Gym"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/profile_facility_textview"
+                            style="@style/CustomEditTextStyleForm"
+                            android:focusableInTouchMode="false"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                        <Spinner
+                            android:id="@+id/profile_facility_spinner"
+                            android:visibility="invisible"
+                            style="@style/CustomTextViewStyle"
+                            android:paddingLeft="8dp"
+                            android:textSize="14sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        style="@style/CustomTextViewStyleForm"
+                        android:text="Gender"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/profile_gender_textview"
+                            style="@style/CustomEditTextStyleForm"
+                            android:focusableInTouchMode="false"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                        <Spinner
+                            android:id="@+id/profile_gender_spinner"
+                            android:visibility="invisible"
+                            style="@style/CustomTextViewStyle"
+                            android:entries="@array/gender"
+                            android:paddingLeft="8dp"
+                            android:textSize="14sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/profile_save_button"
+            style="@style/CustomButtonStyleRed"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="40dp"
+            android:text="Save"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+
+</ScrollView>

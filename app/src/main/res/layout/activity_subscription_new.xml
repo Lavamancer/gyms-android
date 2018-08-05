@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/subscriptionnew_relativelayout"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:id="@+id/subscriptionnew_header_framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/header_main"/>
+    </FrameLayout>
+
+    <LinearLayout
+            android:layout_below="@id/subscriptionnew_header_framelayout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/subscriptionnew_header_linearlayout"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            style="@style/CustomTextViewStyle"
+                            android:text="Subscriptions"
+                            android:textColor="@color/red_light"
+                            android:textStyle="bold"
+                            android:layout_marginRight="4dp"
+                            android:textSize="18sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            style="@style/CustomTextViewStyle"
+                            android:text="New"
+                            android:textColor="@color/red_lighter"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+
+                    <Button
+                        android:id="@+id/subscriptionnew_cancel_button"
+                        style="@style/CustomButtonStyleRedMini"
+                        android:layout_alignParentRight="true"
+                        android:text="Cancel"
+                        android:textSize="13sp"
+                        android:padding="2dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+                <RadioGroup
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/subscriptionnew_monthly_radiobutton"
+                        style="@style/CustomTextViewStyle"
+                        android:background="@drawable/background_rounded_left_checked"
+                        android:drawablePadding="6dp"
+                        android:text="Monthly subscription"
+                        android:button="@null"
+                        android:textAlignment="center"
+                        android:checked="true"
+                        android:enabled="false"
+                        android:padding="4dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <RadioButton
+                        android:id="@+id/subscriptionnew_usages_radiobutton"
+                        style="@style/CustomTextViewStyle"
+                        android:background="@drawable/background_rounded_right_unchecked"
+                        android:drawablePadding="6dp"
+                        android:button="@null"
+                        android:textAlignment="center"
+                        android:padding="4dp"
+                        android:text="Usages card"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                </RadioGroup>
+
+                <LinearLayout
+                    android:layout_margin="10dp"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_margin="5dp"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/subscriptionnew_icon_imageview"
+                            android:src="@drawable/ui_subscription_icon_monthly_red"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/subscriptionnew_icontitle_textview"
+                            style="@style/CustomTextViewStyle"
+                            android:layout_marginLeft="5dp"
+                            android:text="Subscription details"
+                            android:textColor="@color/red_light"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:background="@color/red_light"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp" />
+
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/subscriptionnew_lessontypestitle_textview"
+                            style="@style/CustomTextViewStyleForm"
+                            android:layout_gravity="center_vertical"
+                            android:text="Classes"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content" />
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/subscriptionnew_lessontypes_textview"
+                                style="@style/CustomEditTextStyleForm"
+                                android:focusableInTouchMode="false"
+                                android:drawableRight="@drawable/ui_dropdown_default"
+                                android:text="Evolution, Fitness, Maximal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                            <io.apptik.widget.multiselectspinner.MultiSelectSpinner
+                                android:id="@+id/subscriptionnew_lessontypes_spinner"
+                                android:visibility="invisible"
+                                style="@style/CustomTextViewStyle"
+                                android:paddingLeft="8dp"
+                                android:textSize="14sp"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/subscriptionnew_monthly_linearlayout"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                style="@style/CustomTextViewStyleForm"
+                                android:text="Months"
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content" />
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:id="@+id/subscriptionnew_months_textview"
+                                    style="@style/CustomEditTextStyleForm"
+                                    android:focusableInTouchMode="false"
+                                    android:drawableRight="@drawable/ui_dropdown_default"
+                                    android:text="3 months"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+                                <Spinner
+                                    android:id="@+id/subscriptionnew_months_spinner"
+                                    android:visibility="invisible"
+                                    style="@style/CustomTextViewStyle"
+                                    android:paddingLeft="8dp"
+                                    android:textSize="14sp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp" />
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                style="@style/CustomTextViewStyleForm"
+                                android:text="Weekly assistance"
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:id="@+id/subscriptionnew_days_textview"
+                                    style="@style/CustomEditTextStyleForm"
+                                    android:drawableRight="@drawable/ui_dropdown_default"
+                                    android:text="Unlimited"
+                                    android:focusableInTouchMode="false"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+                                <Spinner
+                                    android:id="@+id/subscriptionnew_days_spinner"
+                                    android:visibility="invisible"
+                                    style="@style/CustomTextViewStyle"
+                                    android:paddingLeft="8dp"
+                                    android:textSize="14sp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp" />
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:id="@+id/subscriptionnew_usages_linearlayout"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                style="@style/CustomTextViewStyleForm"
+                                android:text="Nº sessions"
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content" />
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:id="@+id/subscriptionnew_usages_textview"
+                                    style="@style/CustomEditTextStyleForm"
+                                    android:focusableInTouchMode="false"
+                                    android:drawableRight="@drawable/ui_dropdown_default"
+                                    android:text="10 sessions"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+                                <Spinner
+                                    android:id="@+id/subscriptionnew_usages_spinner"
+                                    android:visibility="invisible"
+                                    style="@style/CustomTextViewStyle"
+                                    android:paddingLeft="8dp"
+                                    android:textSize="14sp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp" />
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                style="@style/CustomTextViewStyleForm"
+                                android:text="Start date"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content" />
+                            <TextView
+                                android:id="@+id/subscriptionnew_start_textview"
+                                style="@style/CustomEditTextStyleForm"
+                                android:drawableRight="@drawable/calendar_event_icon_warning"
+                                android:text="01/05/2018"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/subscriptionnew_listview"
+                tools:listitem="@layout/item_subscription"
+                android:paddingBottom="100dp"
+                android:divider="@color/transparent"
+                android:dividerHeight="15dp"
+                android:clipToPadding="false"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+    <FrameLayout
+        android:layout_below="@id/subscriptionnew_header_framelayout"
+        android:background="@drawable/background_shadow_gradient"
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+
+    <TextView
+        android:id="@+id/subscriptionnew_empty_textview"
+        android:visibility="gone"
+        style="@style/CustomTextViewStyle"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:textAlignment="center"
+        android:text="No subscription found for applied filters"
+        android:textColor="@color/gray"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/subscriptionnew_contract_linearlayout"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:background="@drawable/background_shadow_gradient_inverse"
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+        <FrameLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/subscriptionnew_contract_button"
+                style="@style/CustomButtonStyleRed"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="15dp"
+                android:text="Purchase: 60,00 €"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

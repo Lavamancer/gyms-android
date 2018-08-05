@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/gray_light"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/news_header_framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/header_main"/>
+    </FrameLayout>
+    <ScrollView
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_below="@id/news_header_framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/item_news" />
+
+    </ScrollView>
+
+    <FrameLayout
+        android:layout_below="@id/news_header_framelayout"
+        android:background="@drawable/background_shadow_gradient"
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+
+</RelativeLayout>

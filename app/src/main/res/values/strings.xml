@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Gyms</string>
+    <array name="facilities">
+        <item>All</item>
+        <item>Albatera</item>
+        <item>Callosa del Segura</item>
+        <item>Orihuela</item>
+    </array>
+    <array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+    </array>
+    <array name="lessonTypes">
+        <item>Filter</item>
+        <item>Spinning</item>
+        <item>Running</item>
+        <item>Fitness</item>
+        <item>Nutrition</item>
+    </array>
+    <string name="meals">- Meal 1 \n- Meal 2 \n- Meal 3</string>
+</resources>

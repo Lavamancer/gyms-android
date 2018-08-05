@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/lesson_relativelayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:id="@+id/lesson_header_framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/header_main"/>
+    </FrameLayout>
+    <ScrollView
+        android:layout_below="@id/lesson_header_framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--"Vie. 02/03/2018 16:30"-->
+            <include layout="@layout/item_lesson" />
+
+            <com.google.android.flexbox.FlexboxLayout
+                android:id="@+id/lesson_facilities_flexboxlayout"
+                app:flexWrap="wrap"
+                app:alignItems="center"
+                app:alignContent="center"
+                app:showDivider="middle"
+                app:dividerDrawable="@drawable/background_divider_transparent"
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/CustomTextViewStyleGrayMini"
+                    android:text="Lorca"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    style="@style/CustomTextViewStyleGrayMini"
+                    android:text="Molina del Segura"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    style="@style/CustomTextViewStyleGrayMini"
+                    android:text="Alicante"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    style="@style/CustomTextViewStyleGrayMini"
+                    android:text="Callosa del Segura de Arriba"
+                    android:textSize="13sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    style="@style/CustomTextViewStyleGrayMini"
+                    android:text="Murcia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    style="@style/CustomTextViewStyleGrayMini"
+                    android:text="Cartagena"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </com.google.android.flexbox.FlexboxLayout>
+
+            <LinearLayout
+                android:id="@+id/lesson_subscription_linearlayout"
+                android:orientation="horizontal"
+                android:background="@color/black_50"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/lesson_subscription_imageview"
+                    android:padding="8dp"
+                    android:src="@drawable/calendar_class_suscription_icon_included"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/lesson_subscription_textview"
+                    style="@style/CustomTextViewStyle"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:text="This class is included in your current subscription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingBottom="90dp"
+                android:orientation="vertical"
+                android:background="@color/gray_light"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/lesson_seats_textview"
+                        style="@style/CustomTextViewStyle"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/gray_dark"
+                        android:text="15 seats (12 available):"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <LinearLayout
+                        android:id="@+id/lesson_price_linearlayout"
+                        android:layout_alignParentRight="true"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            style="@style/CustomTextViewStyle"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/gray_dark"
+                            android:text="Price: "
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/lesson_price_textview"
+                            style="@style/CustomTextViewStyle"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/red_light"
+                            android:text="35,00 €"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <com.google.android.flexbox.FlexboxLayout
+                    android:id="@+id/lesson_reservations_flexboxlayout"
+                    android:padding="10dp"
+                    app:flexWrap="wrap"
+                    app:alignItems="flex_start"
+                    app:alignContent="flex_start"
+                    app:showDivider="middle"
+                    app:dividerDrawable="@drawable/background_divider_transparent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/background_rounded_border_gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:tint="@color/gray_dark"
+                        android:src="@drawable/ui_input_icon_user"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:tint="@color/gray_dark"
+                        android:src="@drawable/ui_input_icon_user"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:tint="@color/gray_dark"
+                        android:src="@drawable/ui_input_icon_user"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:tint="@color/gray"
+                        android:src="@drawable/ui_input_icon_user"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:tint="@color/gray"
+                        android:src="@drawable/ui_input_icon_user"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:tint="@color/gray"
+                        android:src="@drawable/ui_input_icon_user"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:tint="@color/gray"
+                        android:src="@drawable/ui_input_icon_user"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:tint="@color/gray"
+                        android:src="@drawable/ui_input_icon_user"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:tint="@color/gray"
+                        android:src="@drawable/ui_input_icon_user"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:tint="@color/gray"
+                        android:src="@drawable/ui_input_icon_user"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:tint="@color/gray"
+                        android:src="@drawable/ui_input_icon_user"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:tint="@color/gray"
+                        android:src="@drawable/ui_input_icon_user"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:tint="@color/gray"
+                        android:src="@drawable/ui_input_icon_user"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:tint="@color/gray"
+                        android:src="@drawable/ui_input_icon_user"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:tint="@color/gray"
+                        android:src="@drawable/ui_input_icon_user"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:tint="@color/gray"
+                        android:src="@drawable/ui_input_icon_user"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:tint="@color/gray"
+                        android:src="@drawable/ui_input_icon_user"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:tint="@color/gray"
+                        android:src="@drawable/ui_input_icon_user"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </com.google.android.flexbox.FlexboxLayout>
+
+                <Button
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:id="@+id/lesson_reservation_button"
+                    style="@style/CustomButtonStyleRed"
+                    android:text="Book..."
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:visibility="gone"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:id="@+id/lesson_cancel_button"
+                    style="@style/CustomButtonStyleGray"
+                    android:text="Cancel booking"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <FrameLayout
+        android:layout_below="@id/lesson_header_framelayout"
+        android:background="@drawable/background_shadow_gradient"
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+
+</RelativeLayout>

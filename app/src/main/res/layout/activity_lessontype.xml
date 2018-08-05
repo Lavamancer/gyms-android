@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:id="@+id/lessontype_header_framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/header_main"/>
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/lessontype_listview"
+        tools:listitem="@layout/item_lesson"
+        android:layout_below="@id/lessontype_header_framelayout"
+        android:divider="@color/gray_light"
+        android:dividerHeight="10dp"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <FrameLayout
+        android:layout_below="@id/lessontype_header_framelayout"
+        android:background="@drawable/background_shadow_gradient"
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+
+</RelativeLayout>

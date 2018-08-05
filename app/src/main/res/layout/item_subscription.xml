@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/subscriptionitem_background_linearlayout"
+            android:padding="7dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical"
+            android:background="@drawable/background_subscription_red"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_marginBottom="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/subscriptionitem_icon_imageview"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="7dp"
+                        android:src="@drawable/ui_subscription_icon_monthly"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/subscriptionitem_name_textview"
+                        style="@style/CustomTextViewStyle"
+                        android:layout_marginRight="7dp"
+                        android:text="Monthly subscription"
+                        android:shadowDy="3"
+                        android:shadowRadius="1"
+                        android:shadowColor="@color/black_50"
+                        android:textSize="18sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/subscriptionitem_short_textview"
+                        style="@style/CustomTextViewStyle"
+                        android:text="3 months"
+                        android:shadowDy="3"
+                        android:shadowRadius="1"
+                        android:shadowColor="@color/black_50"
+                        android:textSize="15sp"
+                        android:textColor="@color/gray_light"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/subscriptionitem_pause_imageview"
+                        android:padding="4dp"
+                        android:src="@drawable/ui_subscription_icon_pause"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:id="@+id/subscriptionitem_info_imageview"
+                        android:src="@drawable/ui_subscription_icon_info"
+                        android:padding="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <FrameLayout
+                android:background="@color/black_25"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            <FrameLayout
+                android:background="@color/white_25"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <LinearLayout
+                android:id="@+id/subscriptionitem_dates_linearlayout"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/subscriptionitem_from_textview"
+                        style="@style/CustomTextViewStyle"
+                        android:layout_marginBottom="3dp"
+                        android:background="@drawable/ui_subscription_start_end_bg"
+                        android:text="from"
+                        android:textSize="8sp"
+                        android:textAlignment="center"
+                        android:textColor="@color/red_light"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/subscriptionitem_start_textview"
+                        style="@style/CustomTextViewStyle"
+                        android:text="01/05/2018"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:textColor="@color/white_50"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_margin="20dp"
+                    android:src="@drawable/ui_subscrition_date_range_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/subscriptionitem_to_textview"
+                        style="@style/CustomTextViewStyle"
+                        android:layout_marginBottom="3dp"
+                        android:background="@drawable/ui_subscription_start_end_bg"
+                        android:text="to"
+                        android:textSize="8sp"
+                        android:textAlignment="center"
+                        android:textColor="@color/red_light"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/subscriptionitem_end_textview"
+                        style="@style/CustomTextViewStyle"
+                        android:text="31/07/2018"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:textColor="@color/white_50"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/subscriptionitem_infotop_linearlayout"
+                android:visibility="gone"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/subscriptionitem_infotypetitle_textview"
+                        style="@style/CustomTextViewStyle"
+                        android:text="Subscription type:"
+                        android:textColor="@color/gray_darker"
+                        android:textSize="11sp"
+                        android:shadowDy="2"
+                        android:shadowDx="2"
+                        android:shadowRadius="1"
+                        android:shadowColor="@color/white_50"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/subscriptionitem_infotype_textview"
+                        style="@style/CustomTextViewStyle"
+                        android:layout_alignParentRight="true"
+                        android:text="3 months (self-renewable)"
+                        android:textSize="11sp"
+                        android:shadowDy="3"
+                        android:shadowRadius="1"
+                        android:shadowColor="@color/black_50"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_marginTop="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/subscriptionitem_infodaystitle_textview"
+                        style="@style/CustomTextViewStyle"
+                        android:text="Weekly assistance:"
+                        android:textColor="@color/gray_darker"
+                        android:textSize="11sp"
+                        android:shadowDy="2"
+                        android:shadowDx="2"
+                        android:shadowRadius="1"
+                        android:shadowColor="@color/white_50"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/subscriptionitem_infodays_textview"
+                        style="@style/CustomTextViewStyle"
+                        android:layout_alignParentRight="true"
+                        android:text="Unlimited"
+                        android:textSize="11sp"
+                        android:shadowDy="3"
+                        android:shadowRadius="1"
+                        android:shadowColor="@color/black_50"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_marginTop="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        style="@style/CustomTextViewStyle"
+                        android:text="Subscription acquired the day:"
+                        android:textColor="@color/gray_darker"
+                        android:textSize="11sp"
+                        android:shadowDy="2"
+                        android:shadowDx="2"
+                        android:shadowRadius="1"
+                        android:shadowColor="@color/white_50"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/subscriptionitem_infodate_textview"
+                        style="@style/CustomTextViewStyle"
+                        android:layout_alignParentRight="true"
+                        android:text="24/06/2018"
+                        android:textSize="11sp"
+                        android:shadowDy="3"
+                        android:shadowRadius="1"
+                        android:shadowColor="@color/black_50"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:background="@color/black_25"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            <FrameLayout
+                android:background="@color/white_25"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <LinearLayout
+                android:id="@+id/subscriptionitem_details_linearlayout"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    style="@style/CustomTextViewStyle"
+                    android:text="Classes included:"
+                    android:layout_marginTop="3dp"
+                    android:textSize="11sp"
+                    android:textAlignment="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <com.google.android.flexbox.FlexboxLayout
+                    android:id="@+id/subscriptionitem_lessontypes_flexboxlayout"
+                    android:layout_marginTop="5dp"
+                    app:flexWrap="wrap"
+                    app:alignItems="center"
+                    app:alignContent="center"
+                    app:showDivider="middle"
+                    app:dividerDrawable="@drawable/background_divider_transparent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/CustomTextViewStyleWhiteMini"
+                        android:text="Evolution"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        style="@style/CustomTextViewStyleWhiteMini"
+                        android:text="Maximal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        style="@style/CustomTextViewStyleWhiteMini"
+                        android:text="Fitness"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </com.google.android.flexbox.FlexboxLayout>
+
+                <TextView
+                    android:id="@+id/subscriptionitem_support_textview"
+                    style="@style/CustomTextViewStyle"
+                    android:text="Weekly assistance:"
+                    android:layout_marginTop="3dp"
+                    android:textSize="11sp"
+                    android:textAlignment="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:id="@+id/subscriptionitem_days_linearlayout"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/subscriptionitem_oneday_textview"
+                        style="@style/CustomTextViewStyleSubscription"
+                        android:text="1 day"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/subscriptionitem_twodays_textview"
+                        style="@style/CustomTextViewStyleSubscription"
+                        android:text="2 days"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/subscriptionitem_threedays_textview"
+                        style="@style/CustomTextViewStyleSubscription"
+                        android:text="3 days"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/subscriptionitem_fourdays_textview"
+                        style="@style/CustomTextViewStyleSubscription"
+                        android:text="4 days"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/subscriptionitem_nolimit_textview"
+                        style="@style/CustomTextViewStyleSubscription"
+                        android:text="Unlimited"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <com.google.android.flexbox.FlexboxLayout
+                    android:id="@+id/subscriptionitem_usages_flexboxlayout"
+                    android:paddingBottom="3dp"
+                    android:layout_marginTop="5dp"
+                    app:flexWrap="wrap"
+                    app:alignItems="center"
+                    app:alignContent="center"
+                    app:showDivider="middle"
+                    app:dividerDrawable="@drawable/background_divider_transparent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:src="@drawable/ui_subscription_session_consumed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:src="@drawable/ui_subscription_session_consumed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:src="@drawable/ui_subscription_session_consumed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:src="@drawable/ui_subscription_session_mark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:src="@drawable/ui_subscription_session_mark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:src="@drawable/ui_subscription_session_mark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:src="@drawable/ui_subscription_session_mark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:src="@drawable/ui_subscription_session_mark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:src="@drawable/ui_subscription_session_mark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:src="@drawable/ui_subscription_session_mark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </com.google.android.flexbox.FlexboxLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/subscriptionitem_infobottom_linearlayout"
+                android:visibility="gone"
+                android:layout_marginTop="8dp"
+
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        style="@style/CustomTextViewStyle"
+                        android:text="Payment method:"
+                        android:textColor="@color/gray_darker"
+                        android:textSize="11sp"
+                        android:shadowDy="2"
+                        android:shadowDx="2"
+                        android:shadowRadius="1"
+                        android:shadowColor="@color/white_50"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/subscriptionitem_infopaymentmethod_textview"
+                        style="@style/CustomTextViewStyle"
+                        android:layout_alignParentRight="true"
+                        android:text="Card"
+                        android:textSize="11sp"
+                        android:shadowDy="3"
+                        android:shadowRadius="1"
+                        android:shadowColor="@color/black_50"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_marginTop="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/subscriptionitem_infocard_textview"
+                        style="@style/CustomTextViewStyle"
+                        android:layout_alignParentRight="true"
+                        android:text="(Visa) **** **** **** 4242"
+                        android:textSize="11sp"
+                        android:shadowDy="3"
+                        android:shadowRadius="1"
+                        android:shadowColor="@color/black_50"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_marginTop="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        style="@style/CustomTextViewStyle"
+                        android:text="Subscription price:"
+                        android:textColor="@color/gray_darker"
+                        android:textSize="11sp"
+                        android:shadowDy="2"
+                        android:shadowDx="2"
+                        android:shadowRadius="1"
+                        android:shadowColor="@color/white_50"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/subscriptionitem_infoprice_textview"
+                        style="@style/CustomTextViewStyle"
+                        android:layout_alignParentRight="true"
+                        android:text="150,00 €"
+                        android:textSize="11sp"
+                        android:shadowDy="3"
+                        android:shadowRadius="1"
+                        android:shadowColor="@color/black_50"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_marginTop="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        style="@style/CustomTextViewStyle"
+                        android:text="Discount:"
+                        android:textColor="@color/gray_darker"
+                        android:textSize="11sp"
+                        android:shadowDy="2"
+                        android:shadowDx="2"
+                        android:shadowRadius="1"
+                        android:shadowColor="@color/white_50"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/subscriptionitem_infodiscount_textview"
+                        style="@style/CustomTextViewStyle"
+                        android:layout_alignParentRight="true"
+                        android:text="10%"
+                        android:textColor="@color/red_light"
+                        android:textSize="11sp"
+                        android:shadowDy="3"
+                        android:shadowRadius="1"
+                        android:shadowColor="@color/black_50"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_marginTop="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        style="@style/CustomTextViewStyle"
+                        android:text="Amount paid:"
+                        android:textColor="@color/gray_darker"
+                        android:textSize="11sp"
+                        android:shadowDy="2"
+                        android:shadowDx="2"
+                        android:shadowRadius="1"
+                        android:shadowColor="@color/white_50"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/subscriptionitem_infofinalprice_textview"
+                        style="@style/CustomTextViewStyle"
+                        android:layout_alignParentRight="true"
+                        android:text="135,00 €"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:shadowDy="3"
+                        android:shadowRadius="1"
+                        android:shadowColor="@color/black_50"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/subscriptionitem_paused_linearlayout"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/subscriptionitem_paused_textview"
+                style="@style/CustomTextViewStyle"
+                android:text="Paused subscription"
+                android:textSize="18sp"
+                android:layout_centerInParent="true"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/subscriptionitem_pauseddate_textview"
+                style="@style/CustomTextViewStyle"
+                android:text="(until 01/06/2018)"
+                android:textSize="10sp"
+                android:layout_centerInParent="true"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

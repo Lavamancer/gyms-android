@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@color/white_calendar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_margin="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="20dp">
+
+                <LinearLayout
+                    android:id="@+id/calendar_myreservations_linearlayout"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <CheckBox
+                        android:id="@+id/calendar_myreservations_checkbox"
+                        android:scaleX="0.80"
+                        android:scaleY="0.80"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_marginLeft="-5dp"
+                        style="@style/CustomTextViewStyle"
+                        android:text="My reservations"
+                        android:textColor="@color/red_light"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/calendar_facilities_linearlayout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/calendar_facilities_textview"
+                        android:layout_marginRight="3dp"
+                        style="@style/CustomTextViewStyle"
+                        android:text="Albatera"
+                        android:textStyle="bold"
+                        android:textColor="@color/red_light"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/calendar_icon_filter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <Spinner
+                    android:id="@+id/calendar_facilities_spinner"
+                    android:entries="@array/facilities"
+                    android:textAlignment="center"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="220dp"
+                    android:layout_height="0dp"/>
+
+                <LinearLayout
+                    android:id="@+id/calendar_lessontypes_linearlayout"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/calendar_lessontypes_textview"
+                        android:layout_marginRight="3dp"
+                        style="@style/CustomTextViewStyle"
+                        android:text="Filter"
+                        android:textColor="@color/black_50"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/calendar_icon_filter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <Spinner
+                    android:id="@+id/calendar_lessontypes_spinner"
+                    android:textAlignment="center"
+                    android:entries="@array/lessonTypes"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="150dp"
+                    android:layout_height="0dp"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="9dp"
+                android:layout_marginBottom="2dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    style="@style/CustomTextViewStyle"
+                    android:text="M"
+                    android:textSize="10sp"
+                    android:layout_weight="1"
+                    android:textColor="@color/gray_dark"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    style="@style/CustomTextViewStyle"
+                    android:text="T"
+                    android:textSize="10sp"
+                    android:layout_weight="1"
+                    android:textColor="@color/gray_dark"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    style="@style/CustomTextViewStyle"
+                    android:text="W"
+                    android:textSize="10sp"
+                    android:layout_weight="1"
+                    android:textColor="@color/gray_dark"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    style="@style/CustomTextViewStyle"
+                    android:text="T"
+                    android:textSize="10sp"
+                    android:layout_weight="1"
+                    android:textColor="@color/gray_dark"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    style="@style/CustomTextViewStyle"
+                    android:text="F"
+                    android:textSize="10sp"
+                    android:layout_weight="1"
+                    android:textColor="@color/gray_dark"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    style="@style/CustomTextViewStyle"
+                    android:text="S"
+                    android:textSize="10sp"
+                    android:layout_weight="1"
+                    android:textColor="@color/gray_dark"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    style="@style/CustomTextViewStyle"
+                    android:text="S"
+                    android:textSize="10sp"
+                    android:layout_weight="1"
+                    android:textColor="@color/gray_dark"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:background="@color/red_light"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <GridView
+                android:id="@+id/calendar_gridview"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="1dp"
+                android:clipToPadding="false"
+                android:clipChildren="true"
+                android:scrollingCache="true"
+                android:smoothScrollbar="true"
+                android:alwaysDrawnWithCache="true"
+                android:columnWidth="100dp"
+                android:stretchMode="columnWidth"
+                android:gravity="center_horizontal"
+                android:scrollbars="none"
+                tools:listitem="@layout/item_day"
+                android:horizontalSpacing="0dp"
+                android:verticalSpacing="0dp"
+                android:numColumns="7"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"/>
+
+            <LinearLayout
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/calendar_date_textview"
+                        style="@style/CustomTextViewStyle"
+                        android:layout_centerVertical="true"
+                        android:text="Tuesday, 13"
+                        android:textColor="@color/red_light"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/calendar_monthyear_textview"
+                        android:layout_centerInParent="true"
+                        style="@style/CustomTextViewStyle"
+                        android:text="February 2018"
+                        android:textStyle="bold"
+                        android:textColor="@color/gray_dark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:layout_alignParentRight="true"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <com.joanzapata.iconify.widget.IconTextView
+                            android:id="@+id/calendar_monthleft_icontextview"
+                            android:layout_gravity="center_vertical"
+                            android:text="A"
+                            android:textStyle="bold"
+                            android:textColor="@color/red_light"
+                            android:textSize="20sp"
+                            android:paddingRight="12dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/calendar_gotoday_textview"
+                            android:layout_gravity="center_vertical"
+                            android:paddingBottom="2dp"
+                            android:text="Go to today"
+                            android:textStyle="bold"
+                            android:textColor="@color/red_light"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <com.joanzapata.iconify.widget.IconTextView
+                            android:id="@+id/calendar_monthright_icontextview"
+                            android:layout_gravity="center_vertical"
+                            android:text="A"
+                            android:textStyle="bold"
+                            android:textColor="@color/red_light"
+                            android:textSize="20sp"
+                            android:paddingLeft="12dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <FrameLayout
+                    android:background="@color/red_light"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp" />
+
+                <es.jalbarracinq.gyms.controller.widget.CustomListView
+                    android:visibility="visible"
+                    android:paddingBottom="30dp"
+                    android:clipToPadding="false"
+                    android:id="@+id/calendar_listview"
+                    android:divider="@color/transparent"
+                    android:scrollbars="none"
+                    tools:listitem="@layout/item_hour"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <include
+        android:id="@+id/calendar_progressbar"
+        layout="@layout/widget_fragmentprogressbar"
+        android:visibility="gone"/>
+
+</RelativeLayout>

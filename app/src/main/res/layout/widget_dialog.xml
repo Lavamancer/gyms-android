@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/black_50"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_margin="30dp"
+        android:padding="20dp"
+        android:background="@drawable/background_dialog"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginBottom="15dp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/dialog_imageview"
+            android:src="@drawable/dialog_icon_success"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center"
+            android:id="@+id/dialog_title_textview"
+            style="@style/CustomTextViewStyle"
+            android:text="The class has been reserved"
+            android:textColor="@color/red_light"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center"
+            android:id="@+id/dialog_message_textview"
+            style="@style/CustomTextViewStyle"
+            android:text="Next Fryday, 02/03/2018 at 4:00 p.m., you have your Fitness class"
+            android:textColor="@color/gray_dark"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/dialog_cancel_button"
+                style="@style/CustomButtonStyleRedMini"
+                android:text="Cancel"
+                android:textSize="13sp"
+                android:padding="2dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/dialog_accept_button"
+                style="@style/CustomButtonStyleRedMini"
+                android:text="Ok"
+                android:textSize="13sp"
+                android:padding="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#FFFFFF</color>
+    <!--<color name="colorPrimaryDark">#ff1313</color>-->
+    <color name="colorPrimaryDark">#ff5051</color>
+    <color name="colorAccent">#ff5051</color>
+
+    <color name="transparent">#00ffffff</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="white_calendar">#f5f5f5</color>
+    <color name="white_25">#3fffffff</color>
+    <color name="white_50">#7bffffff</color>
+    <color name="white_62">#9dffffff</color>
+    <color name="white_75">#b6ffffff</color>
+
+    <color name="gray_lighter">#F0F0F0</color>
+    <color name="gray_light">#d9d2d3</color>
+    <color name="gray">#939291</color>
+    <color name="gray_dark">#505050</color>
+    <color name="gray_darker">#414141</color>
+
+    <color name="black">#000000</color>
+    <color name="black_25">#3c000000</color>
+    <color name="black_50">#7e000000</color>
+    <color name="black_75">#c0000000</color>
+    <color name="red">#ff1313</color>
+    <color name="red_lighter">#ffadad</color>
+    <color name="red_light">#ff5051</color>
+    <color name="red_dark">#990000</color>
+
+
+    <color name="gold">#F4A122</color>
+    <color name="pink">#FFECED</color>
+
+    <color name="green">#009900</color>
+
+
+</resources>

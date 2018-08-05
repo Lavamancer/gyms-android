@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:background="@drawable/footer_bg"
+        android:layout_width="match_parent"
+        android:layout_height="95dp">
+
+        <LinearLayout
+            android:id="@+id/main_profile_linearlayout"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/main_profile_imageview"
+                android:src="@drawable/ui_footer_icon_profile_inactive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/main_profile_textview"
+                style="@style/CustomTextViewStyle"
+                android:text="Profile"
+                android:textColor="@color/white_50"
+                android:textSize="@dimen/main_footer_text_size"
+                android:layout_marginBottom="@dimen/main_footer_text_margin_bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/main_news_linearlayout"
+            android:layout_toRightOf="@id/main_profile_linearlayout"
+            android:layout_toLeftOf="@+id/main_calendar_relativelayout"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/main_news_imageview"
+                android:src="@drawable/ui_footer_icon_news_inactive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/main_news_textview"
+                style="@style/CustomTextViewStyle"
+                android:text="News"
+                android:textColor="@color/white_50"
+                android:textSize="@dimen/main_footer_text_size"
+                android:layout_marginBottom="@dimen/main_footer_text_margin_bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/main_calendar_relativelayout"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/main_footer_text_margin_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/main_calendar_imageview"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ui_footer_icon_calendar_active"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/main_calendar_textview"
+                style="@style/CustomTextViewStyle"
+                android:text="Calendar"
+                android:textColor="@color/white"
+                android:textSize="@dimen/main_footer_text_size"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/main_evolution_linearlayout"
+            android:layout_toRightOf="@id/main_calendar_relativelayout"
+            android:layout_toLeftOf="@+id/main_subscriptions_linearlayout"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/main_evolution_imageview"
+                android:src="@drawable/ui_footer_icon_evolution_inactive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/main_evolution_textview"
+                style="@style/CustomTextViewStyle"
+                android:text="Evolution"
+                android:textColor="@color/white_50"
+                android:textSize="@dimen/main_footer_text_size"
+                android:layout_marginBottom="@dimen/main_footer_text_margin_bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/main_subscriptions_linearlayout"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/main_subscriptions_imageview"
+                android:src="@drawable/ui_footer_icon_subscriptions_inactive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/main_subscriptions_textview"
+                style="@style/CustomTextViewStyle"
+                android:text="Subscriptions"
+                android:textColor="@color/white_50"
+                android:textSize="@dimen/main_footer_text_size"
+                android:layout_marginBottom="@dimen/main_footer_text_margin_bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/evolution_header_linearlayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:id="@+id/evolution_header_framelayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <include layout="@layout/header_main"/>
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/CustomTextViewStyle"
+                android:text="Evolution"
+                android:textColor="@color/red_light"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/evolution_current_button"
+                style="@style/CustomButtonStyleRedMini"
+                android:layout_alignParentRight="true"
+                android:text="Current"
+                android:textSize="13sp"
+                android:padding="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:background="@color/gray"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/CustomTextViewStyleForm"
+                    android:layout_marginLeft="53dp"
+                    android:text="Date"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    style="@style/CustomTextViewStyleForm"
+                    android:layout_marginLeft="50dp"
+                    android:text="Monitor"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView
+                android:layout_marginRight="20dp"
+                android:layout_alignParentRight="true"
+                style="@style/CustomTextViewStyleForm"
+                android:layout_marginLeft="40dp"
+                android:text="Goal"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/evolution_listview"
+        tools:listitem="@layout/item_history"
+        android:layout_below="@id/evolution_header_linearlayout"
+        android:paddingBottom="30dp"
+        android:divider="@color/gray_light"
+        android:dividerHeight="1dp"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <FrameLayout
+        android:layout_below="@id/evolution_header_linearlayout"
+        android:background="@drawable/background_shadow_gradient"
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+
+</RelativeLayout>

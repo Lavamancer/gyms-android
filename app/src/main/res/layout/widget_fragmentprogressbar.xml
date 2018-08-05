@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_progressbar_framelayout"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="#81000000"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ProgressBar
+        android:layout_centerInParent="true"
+        android:indeterminateTint="@color/red_light"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/widget_progressbar" />
+
+</RelativeLayout>

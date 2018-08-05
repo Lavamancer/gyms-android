@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/diet_header_linearlayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:id="@+id/diet_header_framelayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <include layout="@layout/header_main"/>
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_marginRight="3dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/menu_icon_nutrition"
+                    android:tint="@color/red_light"
+                    android:layout_width="17dp"
+                    android:layout_height="17dp" />
+                <TextView
+                    style="@style/CustomTextViewStyle"
+                    android:text="Nutrition"
+                    android:textColor="@color/red_light"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_marginRight="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    style="@style/CustomTextViewStyle"
+                    android:text="Diet"
+                    android:textColor="@color/red_lighter"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <Button
+                android:id="@+id/diet_today_button"
+                style="@style/CustomButtonStyleRedMini"
+                android:layout_alignParentRight="true"
+                android:text="Today"
+                android:textSize="13sp"
+                android:padding="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@color/gray"
+            android:padding="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/diet_previous_linearlayout"
+                android:orientation="horizontal"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingRight="25dp"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_marginRight="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ui_nutrition_icon_day_previous"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/diet_previous_textview"
+                    style="@style/CustomTextViewStyleForm"
+                    android:text="Monday"
+                    android:textColor="@color/white_50"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/diet_day_textview"
+                style="@style/CustomTextViewStyleForm"
+                android:text="Tuesday"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:id="@+id/diet_next_linearlayout"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="25dp"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/diet_next_textview"
+                    style="@style/CustomTextViewStyleForm"
+                    android:text="Wednesday"
+                    android:textColor="@color/white_50"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_marginRight="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ui_nutrition_icon_day_next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_below="@id/diet_header_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+                <LinearLayout
+                    android:paddingTop="5dp"
+                    android:paddingLeft="10dp"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp">
+
+                    <TextView
+                        android:id="@+id/diet_breakfast_textview"
+                        style="@style/CustomTextViewStyle"
+                        android:text="@string/meals"
+                        android:textColor="@color/gray_dark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <TextView
+                    style="@style/CustomTextViewStyle"
+                    android:background="@color/red_light"
+                    android:gravity="center"
+                    android:rotation="-90"
+                    android:transformPivotX="50dp"
+                    android:transformPivotY="50dp"
+                    android:text="Breakfast"
+                    android:textColor="@color/white"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp" />
+
+                <FrameLayout
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+                <LinearLayout
+                    android:paddingTop="5dp"
+                    android:paddingLeft="10dp"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp">
+
+                    <TextView
+                        android:id="@+id/diet_brunch_textview"
+                        style="@style/CustomTextViewStyle"
+                        android:text="@string/meals"
+                        android:textColor="@color/gray_dark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <TextView
+                    style="@style/CustomTextViewStyle"
+                    android:background="@color/red_lighter"
+                    android:gravity="center"
+                    android:rotation="-90"
+                    android:transformPivotX="50dp"
+                    android:transformPivotY="50dp"
+                    android:text="Brunch"
+                    android:textColor="@color/white"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp" />
+
+                <FrameLayout
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+                <LinearLayout
+                    android:paddingTop="5dp"
+                    android:paddingLeft="10dp"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp">
+
+                    <TextView
+                        android:id="@+id/diet_lunch_textview"
+                        style="@style/CustomTextViewStyle"
+                        android:text="@string/meals"
+                        android:textColor="@color/gray_dark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <TextView
+                    style="@style/CustomTextViewStyle"
+                    android:background="@color/red_light"
+                    android:gravity="center"
+                    android:rotation="-90"
+                    android:transformPivotX="50dp"
+                    android:transformPivotY="50dp"
+                    android:text="Lunch"
+                    android:textColor="@color/white"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp" />
+
+                <FrameLayout
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+                <LinearLayout
+                    android:paddingTop="5dp"
+                    android:paddingLeft="10dp"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp">
+
+                    <TextView
+                        android:id="@+id/diet_snack_textview"
+                        style="@style/CustomTextViewStyle"
+                        android:text="@string/meals"
+                        android:textColor="@color/gray_dark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <TextView
+                    style="@style/CustomTextViewStyle"
+                    android:background="@color/red_lighter"
+                    android:gravity="center"
+                    android:rotation="-90"
+                    android:transformPivotX="50dp"
+                    android:transformPivotY="50dp"
+                    android:text="Snack"
+                    android:textColor="@color/white"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp" />
+
+                <FrameLayout
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+                <LinearLayout
+                    android:paddingTop="5dp"
+                    android:paddingLeft="10dp"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp">
+
+                    <TextView
+                        android:id="@+id/diet_dinner_textview"
+                        style="@style/CustomTextViewStyle"
+                        android:text="@string/meals"
+                        android:textColor="@color/gray_dark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <TextView
+                    style="@style/CustomTextViewStyle"
+                    android:background="@color/red_light"
+                    android:gravity="center"
+                    android:rotation="-90"
+                    android:transformPivotX="50dp"
+                    android:transformPivotY="50dp"
+                    android:text="Dinner"
+                    android:textColor="@color/white"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp" />
+
+                <FrameLayout
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <FrameLayout
+        android:layout_below="@id/diet_header_linearlayout"
+        android:background="@drawable/background_shadow_gradient"
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+
+</RelativeLayout>

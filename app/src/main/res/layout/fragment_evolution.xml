@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:paddingBottom="50dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/CustomTextViewStyle"
+                android:text="Evolution"
+                android:textColor="@color/red_light"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/evolution_history_button"
+                style="@style/CustomButtonStyleRedMini"
+                android:layout_alignParentRight="true"
+                android:text="History"
+                android:textSize="13sp"
+                android:padding="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:background="@color/gray_light"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/evolution_date_textview"
+                style="@style/CustomTextViewStyleForm"
+                android:text="13/02/2018"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/evolution_goaldate_textview"
+                style="@style/CustomTextViewStyleForm"
+                android:layout_alignParentRight="true"
+                android:textStyle="bold"
+                android:textSize="11sp"
+                android:text="(Goals: 01/04/2018)"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:paddingTop="8dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/CustomTextViewStyleForm"
+                        android:text="Height"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/evolution_height_edittext"
+                        style="@style/CustomEditTextStyleForm"
+                        android:enabled="false"
+                        android:text="178 cm"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/CustomTextViewStyleForm"
+                        android:text="Weight"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/evolution_weight_edittext"
+                        android:enabled="false"
+                        style="@style/CustomEditTextStyleForm"
+                        android:text="87 kg"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/evolution_goalweight_edittext"
+                        android:layout_marginLeft="10dp"
+                        android:drawableRight="@drawable/goal_completed"
+                        android:enabled="false"
+                        style="@style/CustomEditTextStyleForm"
+                        android:text="83 kg"
+                        android:textColor="@color/black_50"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_marginTop="15dp"
+                    style="@style/CustomTextViewStyle"
+                    android:textColor="@color/gray_dark"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:text="Body fat and muscle mass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        style="@style/CustomTextViewStyleForm"
+                        android:text="Body fat"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/evolution_fat_edittext"
+                        android:enabled="false"
+                        style="@style/CustomEditTextStyleForm"
+                        android:text="35%"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/evolution_goalfat_edittext"
+                        android:layout_marginLeft="10dp"
+                        android:drawableRight="@drawable/goal_exceeded"
+                        android:enabled="false"
+                        style="@style/CustomEditTextStyleForm"
+                        android:text="29%"
+                        android:textColor="@color/black_50"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        style="@style/CustomTextViewStyleForm"
+                        android:text="Mass"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/evolution_mass_edittext"
+                        android:enabled="false"
+                        style="@style/CustomEditTextStyleForm"
+                        android:text="74,7"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/evolution_goalmass_edittext"
+                        android:layout_marginLeft="10dp"
+                        android:drawableRight="@drawable/goal_completed"
+                        android:enabled="false"
+                        style="@style/CustomEditTextStyleForm"
+                        android:text="72,0"
+                        android:textColor="@color/black_50"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_marginTop="15dp"
+                    style="@style/CustomTextViewStyle"
+                    android:textColor="@color/gray_dark"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:text="Measurements"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        style="@style/CustomTextViewStyleForm"
+                        android:text="Waist"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/evolution_waist_edittext"
+                        android:enabled="false"
+                        style="@style/CustomEditTextStyleForm"
+                        android:text="73 cm"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/evolution_goalwaist_edittext"
+                        android:layout_marginLeft="10dp"
+                        android:drawableRight="@drawable/goal_exceeded"
+                        android:enabled="false"
+                        style="@style/CustomEditTextStyleForm"
+                        android:text="75 cm"
+                        android:textColor="@color/black_50"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        style="@style/CustomTextViewStyleForm"
+                        android:text="Stomach"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/evolution_stomach_edittext"
+                        android:enabled="false"
+                        style="@style/CustomEditTextStyleForm"
+                        android:text="96 cm"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/evolution_goalstomach_edittext"
+                        android:layout_marginLeft="10dp"
+                        android:drawableRight="@drawable/goal_completed"
+                        android:enabled="false"
+                        style="@style/CustomEditTextStyleForm"
+                        android:text="85 cm"
+                        android:textColor="@color/black_50"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        style="@style/CustomTextViewStyleForm"
+                        android:text="Chest"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/evolution_chest_edittext"
+                        android:enabled="false"
+                        style="@style/CustomEditTextStyleForm"
+                        android:text="108 cm"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/evolution_goalchest_edittext"
+                        android:layout_marginLeft="10dp"
+                        android:drawableRight="@drawable/goal_exceeded"
+                        android:enabled="false"
+                        style="@style/CustomEditTextStyleForm"
+                        android:text="110 cm"
+                        android:textColor="@color/black_50"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        style="@style/CustomTextViewStyleForm"
+                        android:text="Arm"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/evolution_arm_edittext"
+                        android:enabled="false"
+                        style="@style/CustomEditTextStyleForm"
+                        android:text="30 cm"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/evolution_goalarm_edittext"
+                        android:layout_marginLeft="10dp"
+                        android:drawableRight="@drawable/goal_completed"
+                        android:enabled="false"
+                        style="@style/CustomEditTextStyleForm"
+                        android:text="28 cm"
+                        android:textColor="@color/black_50"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        style="@style/CustomTextViewStyleForm"
+                        android:text="Leg"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/evolution_leg_edittext"
+                        android:enabled="false"
+                        style="@style/CustomEditTextStyleForm"
+                        android:text="68 cm"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/evolution_goalleg_edittext"
+                        android:layout_marginLeft="10dp"
+                        android:drawableRight="@drawable/goal_exceeded"
+                        android:enabled="false"
+                        style="@style/CustomEditTextStyleForm"
+                        android:text="60 cm"
+                        android:textColor="@color/black_50"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/evolution_silhouette_imageview"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/evolution_figure_icon_man"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:foreground="@drawable/background_rounded_inverse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@drawable/evolution_photo_add_bg"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp" />
+                <ImageView
+                    android:layout_marginTop="12dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/evolution_photo_icon_camera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    style="@style/CustomTextViewStyle"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:paddingBottom="5dp"
+                    android:text="Frontal"
+                    android:textSize="11sp"
+                    android:textColor="@color/black_50"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:id="@+id/evolution_frontal_imageview"
+                    android:scaleType="centerCrop"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:foreground="@drawable/background_rounded_inverse"
+                android:layout_marginLeft="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@drawable/evolution_photo_add_bg"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp" />
+                <ImageView
+                    android:layout_marginTop="12dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/evolution_photo_icon_camera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    style="@style/CustomTextViewStyle"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:paddingBottom="5dp"
+                    android:text="Side"
+                    android:textSize="11sp"
+                    android:textColor="@color/black_50"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:id="@+id/evolution_side_imageview"
+                    android:scaleType="centerCrop"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:foreground="@drawable/background_rounded_inverse"
+                android:layout_marginLeft="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@drawable/evolution_photo_add_bg"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp" />
+                <ImageView
+                    android:layout_marginTop="12dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/evolution_photo_icon_camera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    style="@style/CustomTextViewStyle"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:paddingBottom="5dp"
+                    android:text="Back"
+                    android:textSize="11sp"
+                    android:textColor="@color/black_50"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:id="@+id/evolution_back_imageview"
+                    android:scaleType="centerCrop"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

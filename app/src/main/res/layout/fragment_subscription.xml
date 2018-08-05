@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/CustomTextViewStyle"
+                android:text="Subscriptions"
+                android:textColor="@color/red_light"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/subscription_new_button"
+                style="@style/CustomButtonStyleRedMini"
+                android:layout_toLeftOf="@+id/subscription_history_button"
+                android:layout_marginRight="6dp"
+                android:text="New"
+                android:textSize="13sp"
+                android:padding="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/subscription_history_button"
+                style="@style/CustomButtonStyleRedMini"
+                android:layout_alignParentRight="true"
+                android:text="History"
+                android:textSize="13sp"
+                android:padding="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/subscription_listview"
+        tools:listitem="@layout/item_subscription"
+        android:paddingTop="15dp"
+        android:paddingBottom="30dp"
+        android:scrollbarStyle="outsideOverlay"
+        android:divider="@color/transparent"
+        android:dividerHeight="15dp"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+
+</LinearLayout>

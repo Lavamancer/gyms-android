@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="es.jalbarracinq.gyms">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:name=".Application"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".controller.SplashActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".controller.LoginActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".controller.RegisterActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".controller.RecoveryActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".controller.MainActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".controller.LessonActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".controller.LessonTypeActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".controller.ProfileActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".controller.NewsActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".controller.EvolutionActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".controller.SubscriptionsActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".controller.DietActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".controller.SubscriptionNewActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".controller.CardActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".controller.ReservationActivity" android:screenOrientation="portrait"/>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    android:id="@+id/lessonitem_relativelayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/lessonitem_image_imageview"
+        android:src="@drawable/login_bg"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="120dp" />
+    <ImageView
+        android:layout_alignBottom="@+id/lessonitem_image_imageview"
+        android:background="@drawable/class_detail_top_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/lessonitem_name_textview"
+                style="@style/CustomTextViewStyle"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:text="Fitness"
+                android:textColor="@color/red_light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/lessonitem_alternative_textview"
+                style="@style/CustomTextViewStyle"
+                android:layout_marginLeft="10dp"
+                android:textSize="16sp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="@color/gray_dark"
+                android:textStyle="bold"
+                android:text="Estado de forma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/lessonitem_description_textview"
+            style="@style/CustomTextViewStyle"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textSize="14sp"
+            android:textColor="@color/gray_dark"
+            android:text="Esta clase tendrá como objetivo conseguir una condición física que le permita sobrellevar el entrenamiento que nuestro programa de fuerza o deporte requiere. Se utilizan combinaciones de ejercicios en forma de circuitos o súper series con un elevado volumen de trabajo."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/lessonitem_info_textview"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            style="@style/CustomTextViewStyle"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:text="Availability"
+            android:textColor="@color/red_light"
+            android:textAlignment="textEnd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</RelativeLayout>

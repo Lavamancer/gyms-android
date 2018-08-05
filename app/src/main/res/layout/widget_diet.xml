@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+    <LinearLayout
+        android:paddingTop="5dp"
+        android:paddingLeft="10dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <TextView
+            style="@style/CustomTextViewStyle"
+            android:text="- Meal 1"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            style="@style/CustomTextViewStyle"
+            android:text="- Meal 2"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            style="@style/CustomTextViewStyle"
+            android:text="- Meal 3"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/CustomTextViewStyle"
+        android:background="@color/red_light"
+        android:gravity="center"
+        android:rotation="-90"
+        android:transformPivotX="50dp"
+        android:transformPivotY="50dp"
+        android:text="Breakfast"
+        android:textColor="@color/white"
+        android:layout_width="100dp"
+        android:layout_height="30dp" />
+
+    <FrameLayout
+        android:layout_alignParentBottom="true"
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+</RelativeLayout>
