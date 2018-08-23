@@ -1,4 +1,4 @@
-# Gyms Android Application [![Juan Albarracin](https://img.shields.io/badge/Juan%20Albarracin-LinkedIn-brightgreen.svg?style=flat)](https://www.linkedin.com/in/juan-albarracín-25169b131/)
+# Gyms Android Application [![Juan Albarracin](https://img.shields.io/badge/Juan%20Albarracin-LinkedIn-brightgreen.svg?style=flat)](https://www.linkedin.com/in/juan-albarracin-25169b131/)
 
 > Complete project for Android
 
